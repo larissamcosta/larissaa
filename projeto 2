@@ -1,0 +1,20 @@
+def insertion_sort(arr):
+    for i in range(1, len(arr)):
+        chave = arr[i]
+        j = i - 1
+        while j >= 0 and chave < arr[j]:
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = chave
+
+# Criando um vetor com números ímpares em ordem crescente
+vetor = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29]
+
+# Exibindo vetor antes da ordenação
+print("Vetor antes da ordenação:", vetor)
+
+# Chamando o algoritmo de ordenação
+insertion_sort(vetor)
+
+# Exibindo vetor após a ordenação
+print("V⬤
